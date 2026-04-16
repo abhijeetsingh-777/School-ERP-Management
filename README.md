@@ -1,16 +1,65 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# 🏰 Hogwarts School Management System
+> "Because even magic needs a spreadsheet."
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A comprehensive **MERN Stack** application designed to manage school operations, including student profiles, teacher assignments, attendance tracking, and multi-level leave approvals.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚡ Features
 
-## Expanding the ESLint configuration
+### 👤 User Portals
+- **Admin:** Full control over staff and student records.
+- **Teacher:** Manage class attendance and submit leave requests.
+- **Student:** View academic year-wise data and profiles.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛠️ Functional Modules
+- **Attendance Registry:** Daily presence tracking for both students and staff.
+- **Leave Management:** Multi-level approval workflow (Coordinator -> Admin).
+- **Academic Archive:** Historical data preservation with year-wise storage.
+- **Parent Mapping:** Seamless linkage between student and parent profiles.
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS, React Router, Axios
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (Mongoose)
+- **Security:** JWT Authentication, Bcrypt.js (Password Hashing)
+
+---
+📂 Project Structure
+
+├── frontend/
+│   ├── src/
+│   │   ├── components/    # Reusable UI (Nav, Footer)
+│   │   ├── pages/         # Home, Login, Register, Students...
+│   │   └── services/      # Axios API configuration
+├── backend/
+│   ├── controllers/       # Auth and Data logic
+│   ├── models/            # MongoDB Schemas (User, Student, Leave)
+│   ├── routes/            # Express API endpoints
+│   └── server.js          # Entry point
+
+
+## 🛠️ Installation & Setup
+
+### 1. Clone the repository
+### 2.Backend Setup
+--- Bash
+      cd backend
+      npm install
+👉Create a .env file in the backend folder:
+---Start the backend server:
+       npm run dev
+### 3.Frontend Setup
+       cd ../frontend
+       npm install
+
+
+
+Developed with ❤️
+       
+       
